@@ -8,4 +8,38 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="NumberStyle" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+        <item name="android:background">@drawable/in_no_active</item>
+    </style>
+
+    <style name="ControlButtonStyle" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+        <item name="android:background">@drawable/control_button_background</item>
+    </style>
+
+    <style name="CalcViewStyle" parent="Base.Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:background">@drawable/control_button_background</item>
+    </style>
 </resources>

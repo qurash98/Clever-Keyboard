@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
                 }
             )
             Log.d("Mrx", "content = $content")
-            textView.text = content
+            calcView.text = content
         }
         one.setOnClickListener(onClickListener)
         two.setOnClickListener(onClickListener)
@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
             if (view == remove) {
                 if (content.isNotEmpty()) {
                     content.setLength(0)
-                    textView.text = content
+                    calcView.text = content
                 }
                 true
             } else {
