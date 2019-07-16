@@ -2,8 +2,9 @@ package com.example.numberickeypad
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.bottom_sheet.*
+import uz.anorsystem.customtextviewlibrary.DoubleTextView
 
 
 class MainActivity : AppCompatActivity() {
@@ -11,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
-        val custom = Customs(bottom_sheet)
+        val custom = uz.anorsystem.customtextviewlibrary.Customs(bottoms as ConstraintLayout?)
         double_bottom_sheet.setOnClickListener {
             custom.setView(it as DoubleTextView?)
         }
