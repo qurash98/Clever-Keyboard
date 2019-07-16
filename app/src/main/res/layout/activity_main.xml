@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                     android:layout_width="match_parent"
-                                                     android:layout_height="match_parent"
-                                                     android:background="#efefef">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef">
 
-    <include layout="@layout/content_main" />
+    <com.example.numberickeypad.DoubleTextView
+        android:id="@+id/double_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
-    <!-- Adding bottom sheet after main content -->
-    <include layout="@layout/bottom_sheet"/>
+    <com.example.numberickeypad.DoubleTextView
+        android:id="@+id/double_bottom_sheet2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp" />
+
+
+    <include layout="@layout/bottom_sheet" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
