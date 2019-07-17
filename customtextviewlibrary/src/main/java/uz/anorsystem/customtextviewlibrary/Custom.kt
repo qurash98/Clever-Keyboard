@@ -38,6 +38,10 @@ class Customs(bottom_sheet: ConstraintLayout?) {
         initBottomSheet()
     }
 
+    fun getResult(): String {
+        return header.text.toString()
+    }
+
     @SuppressLint("SetTextI18n")
     private fun initBottomSheet() {
         val onClickListener = View.OnClickListener { view ->
